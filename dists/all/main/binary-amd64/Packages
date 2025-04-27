@@ -1,0 +1,14 @@
+Package: nftables-blocklist
+Priority: optional
+Section: utils
+Maintainer: Stephan Seifermann <seiferma@users.noreply.github.com>
+Architecture: amd64
+Version: 0.0.2
+Filename: pool/main/n/nftables-blocklist/nftables-blocklist_0.0.2_amd64.deb
+Size: 5044466
+MD5sum: 962ccc71f93a5f8d5e49ff05d74fc8c5
+SHA1: 7f12cb3642c7567ca9ee26571ecdc79ae1c53492
+SHA256: 8a0f597ca10a0fae137bab6dd5e8eb81c591894a2a3ff53942a166a89b7c1dba
+SHA512: 2b0da61670b9a0b95b71327b54cc134e45d522bd1dc7e10dba8c0107b88f0321523059d0948a7c5e009dffd2bdc7394787b88776207db0b3cb6b245aa0ca822c
+Description: Packaged nftables-blocklist
+
