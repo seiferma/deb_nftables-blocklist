@@ -27,3 +27,9 @@ go.work.sum
 # custom paths
 build/
 .vscode/launch.json
+
+# deb repo
+/aptly/db/
+/aptly/pool/
+/deb/
+/new-debs/

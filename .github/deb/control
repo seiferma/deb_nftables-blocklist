@@ -1,0 +1,7 @@
+Package: nftables-blocklist
+Version: $version
+Section: utils
+Priority: optional
+Architecture: $arch
+Maintainer: Stephan Seifermann <seiferma@users.noreply.github.com>
+Description: Packaged nftables-blocklist
