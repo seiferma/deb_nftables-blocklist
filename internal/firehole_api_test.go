@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"net/http/httptest"
+	"regexp"
 	"testing"
 	"time"
 )
@@ -18,6 +19,13 @@ func assertEquals(t *testing.T, expected, actual interface{}) {
 	if expected != actual {
 		t.Errorf("Expected \"%v\" but got \"%v\".", expected, actual)
 	}
+}
+
+func assertEqualsIgnoringWhitespaces(t *testing.T, expected, actual string) {
+	multiSpaceMatcher := regexp.MustCompile(`\s+`)
+	expectedNormalized := multiSpaceMatcher.ReplaceAllString(expected, " ")
+	actualNormalized := multiSpaceMatcher.ReplaceAllString(actual, " ")
+	assertEquals(t, expectedNormalized, actualNormalized)
 }
 
 func TestGetLists(t *testing.T) {

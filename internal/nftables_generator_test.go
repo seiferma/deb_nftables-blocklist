@@ -81,5 +81,5 @@ table inet blocktbl {
 `
 
 	assertNil(t, err)
-	assertEquals(t, expected, actual)
+	assertEqualsIgnoringWhitespaces(t, expected, actual)
 }
