@@ -24,6 +24,7 @@ envsubst < "$SCRIPT_DIR/control" > "$BUILD_DIR/nftables-blocklist/DEBIAN/control
 
 # prepare data
 mkdir -p "$BUILD_DIR/nftables-blocklist/usr/bin"
+chmod +x "$binfile"
 cp "$binfile" "$BUILD_DIR/nftables-blocklist/usr/bin/"
 
 # create deb file
